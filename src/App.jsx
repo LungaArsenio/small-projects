@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
 
       let interval;
-  
+
       if (running) {
         interval = setInterval(() => {
           setTime((prevTime) => prevTime + 10);
