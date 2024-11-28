@@ -2,6 +2,7 @@
 
 export default function Board({ task, index, taskList, setTaskList }) {
   const handleDelete = () => {
+        // eslint-disable-next-line react/prop-types
         let removeIndex = taskList.indexOf(task);
         taskList.splice(removeIndex, 1)
       }
