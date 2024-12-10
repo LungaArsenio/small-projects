@@ -6,6 +6,12 @@ export default function Input({taskList, setTaskList}) {
 
   const handleAddTask = (e) => {
     e.preventDefault()
+    if (input === "") {
+      alert("Please enter a task");
+
+      return;
+    }
+
     /**This chunk allows me to grab every element stored in my
      * task list array and add what is currently stored on the input field.
      *
