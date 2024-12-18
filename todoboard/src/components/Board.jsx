@@ -3,6 +3,7 @@
 export default function Board({ task, index, taskList, setTaskList }) {
   //setTaskList and taskList were passed from the parent component as props so I can modify the taskList array
   const handleDelete = () => {
+    // adicionar modulo de confirmacao de exclusao de task.
         // eslint-disable-next-line react/prop-types
         let removeIndex = taskList.indexOf(task);//targetting the task object in the taskList array
     taskList.splice(removeIndex, 1)
